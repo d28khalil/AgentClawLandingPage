@@ -1,4 +1,4 @@
-# AgentClaw API - Landing Page
+# AgentClawLandingPage
 
 Modern, dark-themed SaaS landing page for AgentClaw API.
 
@@ -41,43 +41,28 @@ Modern, dark-themed SaaS landing page for AgentClaw API.
 
 ### Option 1: Open Directly
 
-Simply open `index.html` in your browser:
-
-```bash
-# macOS
-open landing-page/index.html
-
-# Linux
-xdg-open landing-page/index.html
-
-# Windows
-start landing-page/index.html
-```
+Simply open `index.html` in your browser.
 
 ### Option 2: Local Server
 
-For best results, use a local server:
+The project is configured to run on port 3011:
 
 ```bash
-# Python 3
-python3 -m http.server 8000 --directory landing-page
-
-# Node.js (with npx)
-npx serve landing-page
-
-# PHP
-php -S localhost:8000 -t landing-page
+# Using npm (configured in package.json)
+npm run dev
 ```
 
-Then visit: http://localhost:8000
+Then visit: http://localhost:3011
 
 ## Files
 
 ```
-landing-page/
+.
 ├── index.html    # Main HTML file
 ├── styles.css    # Dark theme styles
 ├── script.js     # Interactions & animations
+├── onboarding.html # Onboarding flow
+├── package.json  # Project configuration
 └── README.md     # This file
 ```
 
