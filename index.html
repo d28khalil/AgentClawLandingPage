@@ -22,12 +22,47 @@
                     <span class="logo-text">AgentClaw<span class="logo-api">API</span></span>
                 </div>
                 <div class="nav-links">
-                    <a href="#features" class="nav-link">Features</a>
-                    <a href="#benefits" class="nav-link">Benefits</a>
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#features" class="nav-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        Features
+                    </a>
+                    <a href="#benefits" class="nav-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        Benefits
+                    </a>
+                    <a href="#pricing" class="nav-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        Pricing
+                    </a>
+                    <a href="#faq" class="nav-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                        FAQ
+                    </a>
+                    <div class="mobile-menu-cta mobile-only">
+                        <a href="onboarding.html" class="btn btn-primary">Get Started</a>
+                        <a href="#faq" class="btn btn-secondary">Contact Us</a>
+                    </div>
                 </div>
-                <a href="onboarding.html" class="btn btn-primary">Get Started</a>
+                <div class="nav-right">
+                    <a href="onboarding.html" class="btn btn-primary nav-cta">Get Started</a>
+                    <button class="mobile-menu-toggle mobile-only" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -47,8 +82,8 @@
             <div class="hero-content">
                 <!-- Single badge centered -->
                 <div class="hero-badge-container">
+                    <span class="hero-badge hero-badge-accent version-pill">v1.0</span>
                     <span class="hero-badge">The Perfect Companion for Openclaw</span>
-                    <span class="hero-badge hero-badge-accent">v1.0</span>
                 </div>
 
                 <!-- Main headline -->
@@ -65,19 +100,26 @@
 
                 <!-- CTA buttons -->
                 <div class="hero-cta">
-                    <a href="onboarding.html" class="btn btn-primary btn-large">
+                    <!-- Desktop Buttons -->
+                    <a href="onboarding.html" class="btn btn-primary btn-large desktop-only">
                         Get Started
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
-                    <a href="https://ai-realtor.fly.dev/docs" target="_blank" class="btn btn-secondary btn-large">
+                    <a href="https://ai-realtor.fly.dev/docs" target="_blank" class="btn btn-secondary btn-large desktop-only">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="16,18 22,12 16,6"/>
                             <polyline points="8,6 2,12 8,18"/>
                         </svg>
                         View Full API
                     </a>
+
+                    <!-- Mobile Buttons -->
+                    <div class="mobile-cta-row mobile-only">
+                        <a href="#pricing" class="btn btn-primary">See Pricing</a>
+                        <a href="#faq" class="btn btn-secondary">Contact Us</a>
+                    </div>
                 </div>
 
                 <!-- Stats grid -->
@@ -337,7 +379,7 @@
 
                 <!-- Google My Business -->
                 <div class="platform-card" style="--platform-color: #4285f4;">
-                    <img class="platform-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Business">
+                    <img class="platform-icon" src="assets/google-business-icon.png" alt="Google Business" style="width: 40px; height: 40px;">
                     <span class="platform-name">Google Business</span>
                 </div>
 
@@ -2288,6 +2330,27 @@
 
     <!-- Stripe Payment Integration -->
     <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileMenuToggle && navLinks) {
+                mobileMenuToggle.addEventListener('click', () => {
+                    mobileMenuToggle.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+
+                // Close menu when clicking a link
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenuToggle.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+        });
+
         // Replace with your Stripe publishable key
         const STRIPE_PUBLISHABLE_KEY = 'pk_live_your_key_here'; // Replace with your actual Stripe publishable key
 
