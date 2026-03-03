@@ -182,71 +182,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
     content.style.transition = 'max-height 0.3s ease';
 });
 
-// Mobile menu toggle (for future enhancement)
-const createMobileMenu = () => {
-    const nav = document.querySelector('.nav-content');
-    const navLinks = document.querySelector('.nav-links');
-
-    // Only create if it doesn't exist
-    if (document.querySelector('.mobile-menu-toggle')) return;
-
-    const toggle = document.createElement('button');
-    toggle.className = 'mobile-menu-toggle';
-    toggle.innerHTML = `
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-    `;
-
-    toggle.style.cssText = `
-        display: none;
-        background: transparent;
-        border: none;
-        color: var(--text-primary);
-        cursor: pointer;
-        padding: 0.5rem;
-    `;
-
-    nav.appendChild(toggle);
-
-    // Show on mobile
-    if (window.innerWidth <= 768) {
-        toggle.style.display = 'block';
-        navLinks.style.display = 'none';
-    }
-
-    toggle.addEventListener('click', () => {
-        const isHidden = navLinks.style.display === 'none';
-        navLinks.style.display = isHidden ? 'flex' : 'none';
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.position = 'absolute';
-        navLinks.style.top = '100%';
-        navLinks.style.left = '0';
-        navLinks.style.right = '0';
-        navLinks.style.background = 'var(--bg-secondary)';
-        navLinks.style.padding = '1rem';
-        navLinks.style.borderTop = '1px solid var(--border-primary)';
-    });
-};
-
-// Initialize mobile menu on load and resize
-window.addEventListener('load', createMobileMenu);
-window.addEventListener('resize', () => {
-    const navLinks = document.querySelector('.nav-links');
-    if (window.innerWidth > 768) {
-        navLinks.style.display = 'flex';
-        navLinks.style.flexDirection = 'row';
-        navLinks.style.position = 'static';
-        navLinks.style.padding = '0';
-        navLinks.style.borderTop = 'none';
-    } else {
-        navLinks.style.display = 'none';
-    }
-});
-
-// Add glow effect to pricing on hover
+// Glow effect for featured pricing card
 document.querySelectorAll('.pricing-card.featured').forEach(card => {
     card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
