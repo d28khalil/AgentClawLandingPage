@@ -981,37 +981,6 @@
 
     <!-- Stripe Payment Integration -->
     <script>
-        // Modern Mobile Menu Toggle
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-            const closeMobileMenu = document.getElementById('closeMobileMenu');
-
-            if (mobileMenuToggle && mobileMenu && mobileMenuOverlay) {
-                const toggleMenu = () => {
-                    const isOpen = mobileMenu.classList.toggle('active');
-                    mobileMenuOverlay.classList.toggle('active');
-                    mobileMenuToggle.classList.toggle('active');
-                    document.body.style.overflow = isOpen ? 'hidden' : '';
-                };
-
-                mobileMenuToggle.addEventListener('click', toggleMenu);
-                if (closeMobileMenu) closeMobileMenu.addEventListener('click', toggleMenu);
-                mobileMenuOverlay.addEventListener('click', toggleMenu);
-
-                // Close menu when clicking a link
-                mobileMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenuToggle.classList.remove('active');
-                        mobileMenu.classList.remove('active');
-                        mobileMenuOverlay.classList.remove('active');
-                        document.body.style.overflow = '';
-                    });
-                });
-            }
-        });
-
         // Replace with your Stripe publishable key
         const STRIPE_PUBLISHABLE_KEY = 'pk_live_your_key_here'; // Replace with your actual Stripe publishable key
 
