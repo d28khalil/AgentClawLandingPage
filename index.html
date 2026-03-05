@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgentClaw API - AI-Powered Real Estate Platform</title>
-    <meta name="description" content="Complete AI-powered real estate platform with 585+ API endpoints, voice control, direct mail automation, and intelligent analytics. One-time payment, lifetime updates.">
+    
+    <!-- SEO Meta Tags -->
+    <title>AgentClaw API | AI-Powered Real Estate Automation & Infrastructure</title>
+    <meta name="description" content="Transform your real estate business with AgentClaw API. Access 585+ API endpoints for automated direct mail, AI phone calling, and contract automation. Deploy on our cloud or your own hardware for total data sovereignty.">
+    <meta name="keywords" content="Real Estate AI, Realtor Automation, Real Estate API, AI for Real Estate, Direct Mail API, Real Estate Voice AI, Self-Hosted Real Estate Software">
+    <meta name="author" content="AgentClaw">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agentclaw.com/">
+    <meta property="og:title" content="AgentClaw API | AI-Powered Real Estate Automation">
+    <meta property="og:description" content="Access 585+ API endpoints for automated real estate marketing, voice calling, and contract coordination.">
+    <meta property="og:image" content="https://agentclaw.com/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://agentclaw.com/">
+    <meta property="twitter:title" content="AgentClaw API | Real Estate AI Infrastructure">
+    <meta property="twitter:description" content="Unified AI infrastructure for modern real estate teams. Automated direct mail, voice, and contracts.">
+    <meta property="twitter:image" content="https://agentclaw.com/assets/og-image.png">
+
+    <!-- Structured Data (JSON-LD Product Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "AgentClaw API",
+      "description": "An AI-powered infrastructure API for real estate automation, featuring 585+ endpoints and 262 voice commands.",
+      "brand": {
+        "@type": "Brand",
+        "name": "AgentClaw"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "300",
+        "highPrice": "500",
+        "priceCurrency": "USD",
+        "offerCount": "2"
+      },
+      "category": "Real Estate Software / API"
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -42,17 +83,8 @@
                         </svg>
                         Pricing
                     </a>
-                    <a href="#faq" class="nav-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                            <line x1="12" y1="17" x2="12.01" y2="17"/>
-                        </svg>
-                        FAQ
-                    </a>
                     <div class="mobile-menu-cta mobile-only">
                         <a href="onboarding.html" class="btn btn-primary">Get Started</a>
-                        <a href="#faq" class="btn btn-secondary">Contact Us</a>
                     </div>
                 </div>
                 <div class="nav-right">
@@ -118,7 +150,6 @@
                     <!-- Mobile Buttons -->
                     <div class="mobile-cta-row mobile-only">
                         <a href="#pricing" class="btn btn-primary">See Pricing</a>
-                        <a href="#faq" class="btn btn-secondary">Contact Us</a>
                     </div>
                 </div>
 
@@ -1977,323 +2008,186 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <!-- Pricing Section (Hosted Tier) -->
+    <section id="pricing" class="pricing" style="position: relative; overflow: hidden; background: var(--bg-secondary);">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Simple, Transparent Pricing</h2>
-                <p class="section-subtitle">One-time payment. Lifetime updates. No hidden fees.</p>
+                <div style="display: inline-block; padding: 0.5rem 1rem; background: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); border-radius: 2rem; margin-bottom: 1.5rem;">
+                    <span style="color: var(--accent-primary); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;">Hosted Infrastructure</span>
+                </div>
+                <h2 class="section-title">Cloud Managed Instances</h2>
+                <p class="section-subtitle">A dedicated Linux cloud instance hosted by us, with frontend CRM access and full OS control.</p>
             </div>
-            <div class="pricing-grid">
-                <!-- Starter Plan -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Starter</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">$</span>
-                            <span class="price-value">99</span>
-                        </div>
-                        <p class="pricing-period">Per month</p>
-                    </div>
-                    <div class="pricing-features">
-                        <ul class="feature-checklist">
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Frontend CRM</strong> included
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Full Linux Cloud Instance</strong>
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                1GB RAM / 10GB SSD Space
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Full OS Control</strong> (Root Access)
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                Isolated Sandbox Environment
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                Bring Your Own API Keys
-                            </li>
-                        </ul>
-                    </div>
-                    <button
-                        class="btn btn-outline stripe-checkout-button"
-                        data-plan="starter"
-                        data-price="99"
-                        data-currency="usd"
-                        onclick="handleStripeCheckout('starter', 99)"
-                    >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
-                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-                            <line x1="1" y1="10" x2="23" y2="10"/>
-                        </svg>
-                        Pay $99 with Stripe
-                    </button>
-                </div>
 
-                <!-- Professional Plan -->
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Professional</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">$</span>
-                            <span class="price-value">199</span>
-                        </div>
-                        <p class="pricing-period">Per month</p>
-                    </div>
-                    <div class="pricing-features">
-                        <ul class="feature-checklist">
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Everything in Starter</strong>
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Full API Access</strong> included
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Upgraded Hardware:</strong>
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                2GB Dedicated RAM
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                20GB SSD Space
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                Priority Support
-                            </li>
-                        </ul>
-                    </div>
-                    <button
-                        class="btn btn-primary stripe-checkout-button"
-                        data-plan="professional"
-                        data-price="299"
-                        data-currency="usd"
-                        onclick="handleStripeCheckout('professional', 299)"
-                    >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
-                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-                            <line x1="1" y1="10" x2="23" y2="10"/>
-                        </svg>
-                        Pay $299 with Stripe
-                    </button>
-                </div>
+            <div style="max-width: 800px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-primary); border-radius: 2rem; padding: 4rem 2rem; text-align: center; position: relative; overflow: hidden;">
+                <!-- Subtle Glow -->
+                <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(249, 115, 22, 0.03) 0%, transparent 70%); pointer-events: none;"></div>
 
-                <!-- Enterprise Plan -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">$</span>
-                            <span class="price-value">299</span>
+                <div style="position: relative; z-index: 1;">
+                    <div style="font-size: 3rem; margin-bottom: 1.5rem;">🚀</div>
+                    <h3 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Coming Soon</h3>
+                    <p style="color: var(--text-secondary); font-size: 1.125rem; max-width: 500px; margin: 0 auto 3rem;">
+                        We're putting the final touches on our managed cloud infrastructure. Join the waiting list to get early access and exclusive launch pricing.
+                    </p>
+
+                    <form onsubmit="event.preventDefault(); alert('Thanks for joining the waitlist! We will notify you as soon as we launch.');" style="max-width: 450px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; gap: 0.5rem; background: var(--bg-tertiary); border: 1px solid var(--border-primary); padding: 0.5rem; border-radius: 1rem;">
+                            <input type="email" placeholder="Enter your email address" required style="flex: 1; background: transparent; border: none; padding: 0.75rem 1rem; color: #fff; font-size: 1rem; outline: none;">
+                            <button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; border-radius: 0.75rem; white-space: nowrap;">
+                                Join Waitlist
+                            </button>
                         </div>
-                        <p class="pricing-period">Per month</p>
-                    </div>
-                    <div class="pricing-features">
-                        <ul class="feature-checklist">
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Everything in Professional</strong>
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                50GB SSD Space
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                <strong>Custom Agent Training</strong>
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                Add API skills of your choosing
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                We train your agents on your APIs
-                            </li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20,6 9,17 4,12"/>
-                                </svg>
-                                Dedicated Account Manager
-                            </li>
-                        </ul>
-                    </div>
-                    <button
-                        class="btn btn-outline stripe-checkout-button"
-                        data-plan="enterprise"
-                        data-price="500"
-                        data-currency="usd"
-                        onclick="handleStripeCheckout('enterprise', 500)"
-                    >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
-                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-                            <line x1="1" y1="10" x2="23" y2="10"/>
-                        </svg>
-                        Pay $500 with Stripe
-                    </button>
+                        <p style="font-size: 0.75rem; color: var(--text-tertiary);">No spam. Only major project updates.</p>
+                    </form>
                 </div>
             </div>
-            <div class="pricing-note">
-                <p>💡 <strong>All plans include:</strong> A dedicated Linux cloud instance hosted by us, frontend CRM access, full OS control via your own sandbox, and free lifetime platform updates.</p>
+
+            <div class="pricing-note" style="margin-top: 4rem;">
+                <p>💡 <strong>Looking for immediate access?</strong> Check out our <a href="#self-hosted" style="color: var(--accent-primary); text-decoration: underline;">Self-Hosted Infrastructure</a> options available today.</p>
             </div>
         </div>
     </section>
 
     <!-- Self-Hosted Option -->
-    <section class="self-hosted-section">
+    <section class="self-hosted-section pricing" style="padding: 8rem 0; position: relative; overflow: hidden;">
         <div class="container">
-            <div class="self-hosted-card">
-                <div class="self-hosted-content">
-                    <div class="self-hosted-info">
-                        <div class="badge-wrapper">
-                            <span class="badge">Enterprise Ready</span>
+            <div class="section-header">
+                <h2 class="section-title">Self-Hosted Infrastructure</h2>
+                <p class="section-subtitle" style="max-width: 700px; margin: 0 auto;">Run the AgentClaw engine on your own hardware for total infrastructure control and data sovereignty.</p>
+            </div>
+
+            <div class="pricing-grid">
+                
+                <!-- Card 1: Core Engine -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div style="margin-bottom: 0.5rem;">
+                            <span style="color: var(--accent-primary); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em;">Foundational Asset</span>
                         </div>
-                        <h2>Full API and Backend License</h2>
-                        <p>Prefer to host on your own infrastructure? Get the full source code and a perpetual license for a one-time investment.</p>
-                        <ul class="feature-checklist-grid">
+                        <h3>Core Engine</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-value">300</span>
+                        </div>
+                        <p class="pricing-period">One-Time Asset</p>
+                    </div>
+
+                    <div class="pricing-features">
+                        <ul class="feature-checklist">
                             <li>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <polyline points="20,6 9,17 4,12"/>
                                 </svg>
-                                Full Source Code Access
+                                <span><strong>Internal Use Asset License:</strong> Full ownership of the AgentClaw backend for your business infrastructure.</span>
                             </li>
                             <li>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <polyline points="20,6 9,17 4,12"/>
                                 </svg>
-                                585+ API Endpoints
+                                <span><strong>Deployment Freedom:</strong> Host on your own hardware or any cloud provider for total control over your infrastructure and data.</span>
                             </li>
                             <li>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <polyline points="20,6 9,17 4,12"/>
                                 </svg>
-                                262 Voice Commands (MCP)
+                                <span><strong>Full Capability Library:</strong> Unlimited access to all 585+ API Endpoints and 262 Voice Commands.</span>
                             </li>
                             <li>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <polyline points="20,6 9,17 4,12"/>
                                 </svg>
-                                Free Lifetime Updates
+                                <span><strong>Provider Independence:</strong> Fully compatible with your own LLM API keys for total operational control.</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="self-hosted-price-action">
-                        <div class="price-tag">
-                            <span class="currency">$</span>
-                            <span class="amount">500</span>
-                            <span class="period">one-time</span>
-                        </div>
-                        <button 
-                            class="btn btn-primary btn-large stripe-checkout-button" 
-                            data-plan="license" 
-                            data-price="500"
-                            onclick="handleStripeCheckout('license', 500)"
-                        >
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="7 10 12 15 17 10"/>
-                                <line x1="12" y1="15" x2="12" y2="3"/>
-                            </svg>
-                            Buy Full API & Backend License
-                        </button>
-                        <p class="setup-inquiry" style="margin-top: 1.5rem; font-size: 0.875rem; color: var(--text-tertiary);">
-                            Need us to set up your server for you? 
-                            <a href="#faq" style="color: var(--accent-primary); text-decoration: none; font-weight: 600;">Contact us for details & pricing.</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Everything you need to know about AgentClaw API</p>
+                    <button 
+                        class="btn btn-primary stripe-checkout-button" 
+                        data-plan="self-hosted-core" 
+                        data-price="300"
+                        onclick="handleStripeCheckout('self-hosted-core', 300)"
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                        Pay $300 with Stripe
+                    </button>
+                </div>
+
+                <!-- Card 2: Intelligence Engine -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <div style="margin-bottom: 0.5rem;">
+                            <span style="color: var(--accent-primary); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em;">Intelligence Asset</span>
+                        </div>
+                        <h3>Intelligence Engine</h3>
+                        <div class="pricing-price" style="display: flex; align-items: baseline; justify-content: center; gap: 0.3rem; flex-wrap: wrap;">
+                            <span class="price-currency">$</span>
+                            <span class="price-value" style="font-size: 3.25rem;">300</span>
+                            <span style="font-size: 1.75rem; font-weight: 800; color: #fff; margin: 0 0.1rem;">+</span>
+                            <span style="font-size: 1.25rem; font-weight: 600; color: #fff;">$</span>
+                            <span class="price-value" style="font-size: 2.25rem;">99</span>
+                            <span style="font-size: 0.875rem; font-weight: 700; color: #fff; text-transform: uppercase;">/mo</span>
+                        </div>
+                        <p class="pricing-period">Managed Version Access</p>
+                    </div>
+
+                    <div class="pricing-features">
+                        <ul class="feature-checklist">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span><strong>Full Engine Access:</strong> Includes the complete Core Engine license.</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span><strong>Native Intelligence Access:</strong> Full token usage and AI model access included directly within the platform.</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span><strong>Version Priority:</strong> Instant access to the latest backend logic and performance patches as they are released.</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span><strong>Feature Expansion:</strong> Immediate access to new voice commands and real estate integrations as they are released.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button 
+                        class="btn btn-outline stripe-checkout-button" 
+                        style="border: 2px solid var(--accent-primary); color: var(--accent-primary); background: rgba(249, 115, 22, 0.05);"
+                        data-plan="self-hosted-intelligence" 
+                        data-price="399"
+                        onclick="handleStripeCheckout('self-hosted-intelligence', 399)"
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                        Pay $300 + $99/mo with Stripe
+                    </button>
+                </div>
+
             </div>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>What do I get with my purchase?</h3>
-                    <p>You get the complete AgentClaw API platform with full source code, 585+ API endpoints, 262 voice commands, 15+ integrations, and all documentation. Plus free lifetime updates.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What does "lifetime updates" mean?</h3>
-                    <p>Whenever we add new features, endpoints, or integrations, you get them for free. Forever. No subscription fees, no upgrade costs.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Can I host this myself?</h3>
-                    <p>Absolutely! The Starter plan is designed for self-hosting. You get full control over your data and infrastructure. We provide comprehensive documentation and setup guides.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What's included in the Professional plan?</h3>
-                    <p>In addition to everything in Starter, we help you install and configure the platform. You still host it yourself, but we're there to help via email support.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What does the Enterprise plan include?</h3>
-                    <p>We handle everything: hosting, installation, maintenance, updates, and priority support. You just use the API. Perfect for teams that want a hands-off solution.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What integrations are included?</h3>
-                    <p>Zillow, DocuSeal, VAPI, ElevenLabs, Lob.com, Facebook Ads, Postiz, Google Calendar, Anthropic Claude, Exa Research, Google Places, Skip Tracing, and more.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Is there a free trial?</h3>
-                    <p>The complete code is open source on GitHub. You can try it yourself before buying. When you're ready, purchase a plan for official support and updates.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What if I need help?</h3>
-                    <p>Starter includes self-serve documentation. Professional adds email support. Enterprise includes priority support with SLA guarantees.</p>
-                </div>
+
+            <!-- Setup Service Note -->
+            <div class="setup-service-note" style="margin-top: 6rem; padding: 2.5rem; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 1.5rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                <p style="color: #fff; font-size: 1.125rem; line-height: 1.6; margin: 0;">
+                    <span style="font-size: 1.5rem; margin-right: 0.5rem; vertical-align: middle;">🛠️</span> 
+                    <strong>Need help with deployment?</strong> We offer full-service installation and configuration on your hardware or cloud environment for an additional <strong>$500 one-time fee</strong>. 
+                    <br class="desktop-only">
+                    <a href="mailto:support@agentclaw.com" style="color: var(--accent-primary); text-decoration: none; font-weight: 700; margin-left: 0.5rem; border-bottom: 2px solid var(--accent-primary); transition: all 0.2s;">Contact us to get started &rarr;</a>
+                </p>
             </div>
         </div>
     </section>
