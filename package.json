@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "AgentClaw API - AI-Powered Real Estate Platform Landing Page",
   "scripts": {
-    "start": "serve . -p ${PORT:-8080}",
+    "start": "serve . -l 8080",
     "dev": "npx serve . -p 3005",
     "preview": "npx serve . -p 3005"
   },
-  "devDependencies": {
+  "dependencies": {
     "serve": "^14.2.0"
   }
 }
